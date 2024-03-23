@@ -77,8 +77,25 @@
 }
 
       .box{
-        width: 350px;height: 250px;background-color: #171717;display: flex;flex-direction: column;gap: 20px;
-        margin:0rem 0rem 2rem 0rem ;
+        display: flex;justify-content: center;align-items: center;gap: 0px;
+        width: 300px;height: 250px;background-color: #171717;
+
+      }
+
+
+
+      img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: 130px;height: 130px;
+        transition: width 1s, height 1s;
+      }
+
+      img:hover{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        width: 160px;
+        height: 160px;
       }
 
     </style>
@@ -113,20 +130,38 @@
       <!-- main content -->
       <div style="display: flex; flex-direction: row;gap: 0rem; align-items: baseline; width: 25%;margin-left: 4rem;">
         <hr style="width: 100%; color: white;">
-        <h1 class="inika-bold">My services</h1>
+        <h1 class="inika-bold">Skills</h1>
 
     </div>
-    <h1 class="inter">What Can I Do</h1>
-      <div style="display: flex; margin:0rem auto 0rem auto; flex-direction: row;width: 95%;justify-content: space-around;gap: 10%;flex-wrap: wrap;margin-top: 4rem;">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-
-
-      </div>
+    <h1 class="inter">Expertise</h1>
+      <div style="display: flex; margin:0rem auto 0rem auto; flex-direction: row;width: 90%;justify-content: flex-start;gap: 2%;flex-wrap: wrap;margin-top: 1.3rem;">
+        <div class="box" >
+            <img src="./icons/html.png" alt="HTML"  />
+            <!-- <h6>HTML</h6> -->
+        </div>
+        <div class="box">
+            <img src="./icons/css.png" alt="HTML"  />
+        </div>
+        <div class="box">
+            <img src="./icons/JavaScript.png" alt="HTML"  />
+        </div>
+        <div class="box">
+            <img src="./icons/NodeJs.png" alt="HTML"  />
+        </div>
+    </div>
+    <div style="display: flex; margin:0rem auto 0rem auto; flex-direction: row;width: 90%;justify-content: flex-start;gap: 2%;flex-wrap: wrap;margin-top: 2rem;">
+        <div class="box">
+            <img src="./icons/React.png" alt="HTML"  />
+        </div>
+        <div class="box">
+            <img src="./icons/laravel.png" alt="HTML"  />
+        </div>
+        <div class="box">
+            <img src="./icons/Figma.png" alt="HTML"  />
+        </div>
+        <div class="box">
+            <img src="./icons/tailwindcss-plain.png" alt="HTML"  />
+        </div>
+    </div>
   </body>
 </html>
