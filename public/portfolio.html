@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inika:wght@400;700&family=Keania+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <div
+      id="Home"
+      style="display: flex; flex-direction: column; width: 100vw; height: 100vh"
+    >
+      <!-- navigation -->
+      <div
+        id="navigation"
+        style="
+          display: flex;
+          flex-direction: row;
+          height: 7%;
+          justify-content: flex-start;
+          padding-left: 5.2rem;
+          gap: 5%;
+          align-items: center;
+          background-color: #171717;
+        "
+      >
+      <a class="link" href="./index.html" >Home</a>
+      <a class="link" href="./about.html"  >About</a>
+      <a class="link" href="./services.html">Services</a>
+      <a class="link" href="./portfolio.html" style="color: #e50556">Portfolio</a>
+      <a class="link" href="./contact.html" >Contact Us</a>
+      </div>
+
+      <!-- main content -->
+      <div         id="main"
+      style="
+        background-image: url(./background-2.png);
+        background-size: cover;
+        height: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #171717;
+      ">
+      <div style="height: 100%;"></div>
+          <div
+          style="
+            width: 74%;
+            height: 78%;
+            background-color: #0e0e0e8f;
+            margin: auto;
+            position: relative;
+          "
+        >
+          <main>
+            <ul class='gallery'>
+              <li class='slide' style="background-image: url('./project1.jpg')">
+                <div class='content'>
+                  <h2 class='heading'>"Lossless Youths"</h2>
+                  <p class='info'> Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                  praesentium nisi. Id laboriosam ipsam enim.  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='slide' style="background-image: url('./project2.jpg')">
+                <div class='content'>
+                  <h2 class='heading'>"Estrange Bond"</h2>
+                  <p class='info'> Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                  praesentium nisi. Id laboriosam ipsam enim.  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='slide' style="background-image: url('./project3.jpg')">
+                <div class='content'>
+                  <h2 class='heading'>"The Gate Keeper"</h2>
+                  <p class='info'> Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                  praesentium nisi. Id laboriosam ipsam enim.  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='slide' style="background-image: url('./project2.jpg')">
+                <div class='content'>
+                  <h2 class='heading'>"Estrange Bond"</h2>
+                  <p class='info'> Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                  praesentium nisi. Id laboriosam ipsam enim.  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+              <li class='slide' style="background-image: url('./project3.jpg')">
+                <div class='content'>
+                  <h2 class='heading'>"The Gate Keeper"</h2>
+                  <p class='info'> Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                  praesentium nisi. Id laboriosam ipsam enim.  </p>
+                  <button>Read More</button>
+                </div>
+              </li>
+
+
+            </ul>
+          </main>
+    </div>
+    </div>
+
+<nav class='navigation'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script>
+    const gallery = document.querySelector('.gallery');
+
+    function moveSlide(e) {
+    const slides = document.querySelectorAll('.slide');
+    e.target.matches('.next') && gallery.append(slides[0])
+    e.target.matches('.prev') && gallery.prepend(slides[slides.length-1]);
+    }
+
+    document.addEventListener('click',moveSlide,false);
+</script>
+</html>

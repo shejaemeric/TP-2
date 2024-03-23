@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Keania+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite + React</title>
+    <style>
+             .button {
+        padding: 8px 24px;
+        background-color: #e50556;
+        border: 1px solid white;
+        border-color: white;
+        color: white;
+      }
+      .button:hover {
+        border-color: #e50556;
+        background-color: rgba(240, 248, 255, 0);
+      }
+      .link {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "keania", sans-serif;
+        flex-shrink: 0;
+      }
+      .link:hover {
+        color: #e50556;
+        cursor: pointer;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white !important;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #0e0e0e;
+      }
+
+
+      .abel-heading {
+        font-family: "Abel", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 6rem;
+        line-height: 5px;
+        margin-bottom: 75px;
+      }
+
+      .contact-form {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.row {
+  margin-bottom: 40px;
+  width:100%
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ffffff66;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  outline: #e5055695;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+input:focus {
+  border-color: #e5055795;
+}
+input:active {
+  border-color: #e5055795;
+}
+
+input:hover {
+  border-color: #e5055695;
+}
+
+    </style>
+  </head>
+  <body>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <div
+      id="Home"
+      style="display: flex; flex-direction: column; width: 100vw; height: 100vh"
+    >
+      <!-- navigation -->
+      <div
+        id="navigation"
+        style="
+          display: flex;
+          flex-direction: row;
+          height: 7%;
+          justify-content: flex-start;
+          padding-left: 5.2rem;
+          gap: 5%;
+          align-items: center;
+        "
+      >
+      <a class="link" href="./index.html" >Home</a>
+      <a class="link" href="./about.html"  >About</a>
+      <a class="link" href="./services.html">Services</a>
+      <a class="link" href="./portfolio.html">Portfolio</a>
+      <a class="link" href="./contact.html" style="color: #e50556">Contact Us</a>
+      </div>
+      <!-- main content -->
+      <div
+        id="main"
+        style="
+          background-image: url(./background-2.png);
+          background-size: cover;
+          height: -webkit-fill-available;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            width: 70%;
+            height: 70%;
+            background-color: #0e0e0e8f;
+            padding: 4rem 8rem;
+            margin: auto;
+            position: relative;
+          "
+        >
+          <div style="display: flex; flex-direction: row; width: 100%;justify-content:center;align-items: center;height: 100%;">
+
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 0rem;
+                  align-items: baseline;
+                  width: 100%;
+                "
+              >
+              <div class="contact-form">
+                <div style="display: flex;flex-direction: row; gap:8%;justify-content: space-between;">
+                    <div class="row">
+                        <label for="name">Name:</label>
+                        <input autocomplete="off" type="text" id="name" name="name" required>
+                      </div>
+                      <div class="row">
+                        <label for="email">Email:</label>
+                        <input autocomplete="off" type="email" id="email" name="email" required>
+                      </div>
+                </div>
+                <div style="display: flex;flex-direction: row; gap:8%;justify-content: space-between;">
+                <div class="row">
+                  <label for="telephone">Telephone:</label>
+                  <input autocomplete="off" type="tel" id="telephone" name="telephone">
+                </div>
+                <div class="row">
+                  <label for="address">Address:</label>
+                  <input autocomplete="off" type="text" id="address" name="address">
+                </div>
+                </div>
+                <div class="row">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="row" style="display: flex; justify-content: center;align-items: center;">
+                  <button type="submit" class="button">Send</button>
+                </div>
+              </div>
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Keania+One&display=swap" rel="stylesheet">
+    <title>Vite + React</title>
+    <style>
+      .button {
+        padding: 8px 24px;
+        background-color: rgba(240, 248, 255, 0);
+        border: 1px solid white;
+        border-color: white;
+        color: white;
+
+      }
+      .button:hover {
+        border-color: #e50556;
+
+      }
+
+      .link {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "keania", sans-serif;
+        flex-shrink: 0;
+      }
+      .link:hover{
+        color: #e50556;
+        cursor: pointer;
+
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white !important;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #0e0e0e;
+      }
+      .keania-font-heading {
+        font-family: "Keania One", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 5rem;
+        line-height: 5px;
+        }
+
+        .abel-heading {
+        font-family: "Abel", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 3rem;
+        line-height: 5px;
+        margin-bottom: 75px ;
+        }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <div
+      id="Home"
+      style="display: flex; flex-direction: column; width: 100vw; height: 100vh"
+    >
+      <!-- navigation -->
+      <div
+        id="navigation"
+        style="
+          display: flex;
+          flex-direction: row;
+          height: 7%;
+          justify-content: flex-start;
+          padding-left: 5.2rem;
+          gap: 5%;
+          align-items: center;
+        "
+      >
+        <a class="link" href="./index.html" style="color: #e50556" >Home</a>
+        <a class="link" href="./about.html">About</a>
+        <a class="link" href="./services.html">Services</a>
+        <a class="link" href="./portfolio.html">Portfolio</a>
+        <a class="link" href="./contact.html">Contact Us</a>
+      </div>
+      <!-- main content -->
+      <div
+        id="main"
+        style="
+          background-image: url(./background.png);
+          background-size: cover;
+          height: -webkit-fill-available;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            width: 70%;
+            height: 70%;
+            background-color: RGBA(41, 39, 39, 0.56);
+            padding: 4rem 8rem;
+            margin: auto;
+            position: relative;
+          "
+        >
+          <h1 class="abel-heading" style="font-size: 4rem; margin-bottom: 3rem; margin-top: 5rem;">Teta</h1>
+          <div style="display: flex; flex-direction: row;gap: 0rem; align-items: baseline; width: 50%;">
+            <h1 class="keania-font-heading">Precious</h1>
+            <hr style="width: 100%; color: white;">
+        </div>
+
+          <h1 class="abel-heading">Software developer</h1>
+          <div
+            style="
+              display: flex;
+              gap: 2rem;
+              flex-direction: row;
+              width: fit-content;
+            "
+          >
+            <button class="button">Resume</button>
+            <button class="button">Portfolio</button>
+          </div>
+          <div style="display: flex; flex-direction: row;position:
+          absolute;bottom: 0;gap:25%;margin: 1rem 0rem;">
+          <img src="/facebook.png" width="45px" height="45px" />
+          <img src="/twitter.png" width="45px" height="45px" />
+          <img src="/instagram.png" width="45px" height="45px" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

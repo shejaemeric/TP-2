@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Keania+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite + React</title>
+    <style>
+      .button {
+        padding: 8px 24px;
+        background-color: rgba(240, 248, 255, 0);
+        border: 1px solid white;
+        border-color: white;
+        color: white;
+      }
+      .button:hover {
+        border-color: #e50556;
+      }
+
+      .link {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "keania", sans-serif;
+        flex-shrink: 0;
+      }
+      .link:hover {
+        color: #e50556;
+        cursor: pointer;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white !important;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #0e0e0e;
+      }
+
+
+      .abel-heading {
+        font-family: "Abel", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 6rem;
+        line-height: 5px;
+        margin-bottom: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <div
+      id="Home"
+      style="display: flex; flex-direction: column; width: 100vw; height: 100vh"
+    >
+      <!-- navigation -->
+      <div
+        id="navigation"
+        style="
+          display: flex;
+          flex-direction: row;
+          height: 7%;
+          padding-left: 5.2rem;
+          gap: 5%;
+          align-items: center;
+        "
+      >
+      <a class="link" href="./index.html" >Home</a>
+      <a class="link" href="./about.html"  style="color: #e50556">About</a>
+      <a class="link" href="./services.html">Services</a>
+      <a class="link" href="./portfolio.html">Portfolio</a>
+      <a class="link" href="./contact.html">Contact Us</a>
+      </div>
+      <!-- main content -->
+      <div
+        id="main"
+        style="
+          background-image: url(./background-2.png);
+          background-size: cover;
+          height: -webkit-fill-available;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            width: 70%;
+            height: 70%;
+            background-color: #0e0e0e8f;
+            padding: 4rem 8rem;
+            margin: auto;
+            position: relative;
+          "
+        >
+          <div style="display: flex; flex-direction: row; width: 100%">
+            <div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 0rem;
+                  align-items: baseline;
+                  width: 50%;
+                "
+              >
+<div>
+    <h1 class="abel-heading">About Me</h1>
+    <p style="font-family: Abel; font-size: 19px;line-height: 30px;">
+      my portfolio showcases a diverse range of projects and
+      experiences that demonstrate my skills, creativity, and
+      expertise in the field of software development. Within my
+      portfolio, you'll find a collection of projects that highlight
+      my proficiency in various programming languages, frameworks, and
+      tools. Whether it's developing scalable web applications using
+      technologies like HTML, CSS, JavaScript, and React, or building
+      robust back-end systems with Python, Django, and Node.js
+    </p>
+</div>
+<div style="width: 50%;">
+<img src="./1.jpg" width=662px height=810px style="width: 100px; height: 100px;" alt="image2"/>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
